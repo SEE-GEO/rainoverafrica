@@ -1,0 +1,13 @@
+.colored-section {
+  background-color: #171a1c;
+  color: #fff;
+}
+
+body {
+  padding-bottom: 25px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
