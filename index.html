@@ -23,7 +23,6 @@
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#specs">Specifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#documentation">Documentation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
                     </ul>
                 </div>
@@ -35,7 +34,6 @@
                 <div class="text-center mt-5">
                     <h1>Rain over Africa</h1>
                     <p class="lead">Near-instantaneous retrievals by AI</p>
-                    <p><strong><s>Latest retrievals</s></strong><br>
                     <strong><a href="#contact">Contact us for the latest retrievals</a></strong></p>
                     <iframe id="posterior-mean" src="viz/posterior_mean.html" width="383" height="556"></iframe>
                     <iframe id="probability-precip" src="viz/probability_precip.html" width="383" height="556"></iframe>
@@ -86,7 +84,7 @@
                     <p>This product, developed at <a href="https://www.chalmers.se/">Chalmers University of Technology</a> (Sweden), provides probabilistic retrievals of precipitation over Africa by an artificial neural network. The network consists of a fully convolutional, quantile regression neural network, trained using multi-task learning and nearly four years of collocations of <a href="https://data.eumetsat.int/product/EO:EUM:DAT:MSG:HRSEVIRI">SEVIRI level 1.5 data</a> and the <a href="https://doi.org/10.5067/GPM/DPRGMI/CMB/2B/06">GPM DPR and GMI Combined Precipitation L2B</a>. The network infers the precipitation probability distribution for each pixel in a re-gridded SEVIRI image, using all infrared channels and the satellite zenith viewing angle. This enables retrievals independent of the time of day. Only retrievals for the last seven days are stored.</p>
 
                     <h3>Full documentation</h3>
-                    <p>This product will likely be documented in a scientific article or a technical report. In the meantime, the following documents are related:</p>
+                    <p>There is ongoing work to document this product in a paper. In the meantime, the following documents are related:</p>
                     <ul>
                         <li>Hee, L.: Rain over Africa. An application of quantile regression neural networks to retrieve precipitation from geostationary satellites, Chalmers ODR, <a href="https://hdl.handle.net/20.500.12380/305472">https://hdl.handle.net/20.500.12380/305472</a>, 2022.</li>
                         <li>Pfreundschuh, S., Ingemarsson, I., Eriksson, P., Vila, D. A., and Calheiros, A. J. P.: An improved near-real-time precipitation retrieval for Brazil, Atmos. Meas. Tech., 15, 6907-6933, <a href="https://doi.org/10.5194/amt-15-6907-2022">https://doi.org/10.5194/amt-15-6907-2022</a>, 2022.</li>
@@ -95,16 +93,7 @@
             </div>
         </section>
 
-        <section id="data" class="colored-section">
-            <div class="container">
-                <div class="text-center mt-5">
-                    <h1 style="padding-top: 20px; padding-bottom: 20px;">Data</h1>
-                    <p class="lead">Free access to the data is granted after providing us a public SSH key.</p>
-                    <p>Contact us with your public SSH key and a short description about how you intend to use the data. Once you are granted access, you will be able to access the data through an SFTP server. Your public key will be stored for 90 days. After this period, you will have to renew your public key by contacting us again.</p>
-                </div>
-        </section>
-
-        <section id="contact">
+        <section id="contact" class="colored-section">
             <div class="text-center mt-5">
                 <h1 style="padding-top: 20px; padding-bottom: 20px;">Contact us</h1>
                 <div class="row">
